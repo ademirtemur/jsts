@@ -1,0 +1,31 @@
+{
+  "name": "mapjc",
+  "version": "1.0.27",
+  "description": "MAPJC is simple usage helper to coercing json to class.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "class",
+    "json to class",
+    "typescript",
+    "javascript",
+    "mapper json",
+    "mapper json to object",
+    "mapper json to class",
+    "json to object mapper",
+    "json to class mapper",
+    "json to object coercing",
+    "json to class coercing",
+    "json coercer",
+    "json coercing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.2.4"
+  }
+}
