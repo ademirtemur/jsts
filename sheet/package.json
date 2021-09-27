@@ -1,0 +1,23 @@
+{
+  "name": "sheet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "excel", 
+    "table to excel", 
+    "xls", 
+    "xls download", 
+    "js excel", 
+    "js xls"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}
