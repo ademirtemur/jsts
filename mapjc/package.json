@@ -27,7 +27,7 @@
     "json coercer",
     "json coercing"
   ],
-  "author": "",
+  "author": "ademirtemur",
   "license": "ISC",
   "dependencies": {
     "typescript": "^4.2.4"

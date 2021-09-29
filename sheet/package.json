@@ -19,7 +19,7 @@
     "js excel",
     "js xls"
   ],
-  "author": "",
+  "author": "ademirtemur",
   "license": "ISC",
   "dependencies": {
     "typescript": "^4.3.5"
