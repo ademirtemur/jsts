@@ -32,9 +32,9 @@ Example with leaflet :
 ###
 
      import L from 'leaflet';
-     import { factoryAnimatedTracking, ICoord, IRAnimatedTracking, IRLine, OnChangeLocation, OnChangeStatus, OnJoinLine, OnPushPoint, OnRemoveLine } from './index';
-     import { defaultDivIcon } from './divIcon';
-     import './divIcon/divIcon.css';
+     import { factoryAnimatedTracking, ICoord, IRAnimatedTracking, IRLine, OnChangeLocation, OnChangeStatus, OnJoinLine, OnPushPoint, OnRemoveLine } from 'map-animated-tracking';
+     import { defaultDivIcon } from 'map-animated-tracking/divIcon'
+     import 'map-animated-tracking/divIcon/divIcon.css';
 
      const divIcon = (angle: number, isMoving: boolean) => new L.DivIcon({
           html: defaultDivIcon(angle, isMoving)
