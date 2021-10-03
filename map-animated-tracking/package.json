@@ -1,6 +1,6 @@
 {
-  "name": "animated-marker-tracking",
-  "version": "1.0.0",
+  "name": "map-animated-tracking",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "types": "index.d.ts",

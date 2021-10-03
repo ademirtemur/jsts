@@ -24,7 +24,7 @@ Example with leaflet :
 
 ###
 
-<img style="margin-top: 1.5rem; max-height: 512px;" src="https://github.com/ademirtemur/jsts/tree/main/animated-tracking/demo.gif">
+<img style="margin-top: 1.5rem; max-height: 512px;" src="https://github.com/ademirtemur/jsts/blob/main/map-animated-tracking/demo.gif?raw=true">
 
 ###
 
