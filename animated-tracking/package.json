@@ -1,0 +1,39 @@
+{
+  "name": "animated-marker-tracking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ademirtemur/jsts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "map",
+    "map tracking",
+    "map animate",
+    "map animated marker",
+    "map animated tracking",
+    "map animate tracking",
+    "animate marker",
+    "animated marker tracking",
+    "animated tracking",
+    "google animate marker",
+    "leaflet animate marker",
+    "yandex animate marker",
+    "animate marker",
+    "animated marker",
+    "marker tracking",
+    "yandex, google, leaflet tracking",
+    "js",
+    "ts"
+  ],
+  "author": "ademirtemur",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.2.4"
+  }
+}
