@@ -29,6 +29,7 @@ export interface IRHandler {
 export interface IRAnimatedTracking {
     handler: IRHandler;
     pushCoord: (coord: ICoord) => PushCoord;
+    destroy: () => void;
 }
 export declare function factoryAnimatedTracking(options: IOptions): IRAnimatedTracking;
 export {};
