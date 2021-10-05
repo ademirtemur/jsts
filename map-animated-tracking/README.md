@@ -1,18 +1,14 @@
 
-<span style="color: green; width: 100%; font-size: 21px;">
-
 ###
      ANIMATED MARKER and ANIMATED TRACKING
 ###
-</span>
 
 
-<span style="color: grey; font-size: 19px;"> 
 
 ###
      This lib provide to use the animated marker tracking with independing other map lib. You can use this lib with any other map lib in your app. (Google Map, Leaflet Map, Yandex Map etc.)
 ###
-</span>
+
 
 
 ###
@@ -24,7 +20,7 @@ Example with leaflet :
 
 ###
 
-<img style="margin-top: 1.5rem; max-height: 512px;" src="https://github.com/ademirtemur/jsts/blob/main/map-animated-tracking/demo.gif?raw=true">
+<img style="margin-top: 1.5rem; max-height: 512px;" src="https://github.com/ademirtemur/jsts/blob/main/assets/demo.gif?raw=true">
 
 ###
 
