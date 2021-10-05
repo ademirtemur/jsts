@@ -6,7 +6,7 @@
 
 
 ###
-     This lib provide to use the animated marker tracking with independing other map lib. You can use this lib with any other map lib in your app. (Google Map, Leaflet Map, Yandex Map etc.)
+This lib provide to use the animated marker tracking with independing other map lib. You can use this lib with any other map lib in your app. (Google Map, Leaflet Map, Yandex Map etc.)
 ###
 
 
