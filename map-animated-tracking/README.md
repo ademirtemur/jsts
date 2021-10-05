@@ -1,12 +1,14 @@
 
 ###
      ANIMATED MARKER and ANIMATED TRACKING
+
 ###
 
 
 
 ###
 This lib provide to use the animated marker tracking with independing other map lib. You can use this lib with any other map lib in your app. (Google Map, Leaflet Map, Yandex Map etc.)
+
 ###
 
 
@@ -28,12 +30,13 @@ Example with leaflet :
 ###
 
      import L from 'leaflet';
-     import { factoryAnimatedTracking, ICoord, IRAnimatedTracking, IRLine, OnChangeLocation, OnChangeStatus, OnJoinLine, OnPushPoint, OnRemoveLine } from 'map-animated-tracking';
+     import { MOVEMENT_TYPES, factoryAnimatedTracking, ICoord, IRAnimatedTracking, IRLine, OnChangeLocation, OnChangeStatus, OnJoinLine, OnPushPoint, OnRemoveLine } from 'map-animated-tracking/index';
      import { defaultDivIcon } from 'map-animated-tracking/divIcon'
      import 'map-animated-tracking/divIcon/divIcon.css';
 
-     const divIcon = (angle: number, isMoving: boolean) => new L.DivIcon({
-          html: defaultDivIcon(angle, isMoving)
+
+     const divIcon = (angle: number, isMoving: boolean, color?: string) => new L.DivIcon({
+          html: defaultDivIcon(angle, isMoving, color)
      })
 
      const el = document.getElementById('mapC') as HTMLDivElement;
@@ -49,14 +52,25 @@ Example with leaflet :
      tileLayer.addTo(map);
 
      const marker: L.Marker = new L.Marker(L.latLng(0, 0), { icon: divIcon(0, false) }).addTo(map);
-     const path: L.Polyline[] = [];
+     let path: L.Polyline[] = [];
 
      const handleChangeLocation: OnChangeLocation = (coord: ICoord) => {
           marker.setLatLng(L.latLng(coord.lat, coord.lng));
      }
 
-     const handeChangeStatus: OnChangeStatus = (angle: number, isMoving: boolean) => {
-          marker.setIcon(divIcon(angle, isMoving));
+     const handeChangeStatus: OnChangeStatus = (angle: number, movementType: MOVEMENT_TYPES) => {
+          let color;
+          if (movementType === MOVEMENT_TYPES.SHORT_HALT) {
+               color = '#939393';
+          } else if (movementType === MOVEMENT_TYPES.LONG_HALT) {
+               color = 'red';
+
+               if (movementType === MOVEMENT_TYPES.LONG_HALT) {
+                    path.forEach(k => k.remove());
+                    path = [];
+               }
+          }
+          marker.setIcon(divIcon(angle, movementType === MOVEMENT_TYPES.MOVING, color));
      }
 
      const onRemoveLine: OnRemoveLine = (index: number) => {
@@ -78,7 +92,8 @@ Example with leaflet :
 
      const factor: IRAnimatedTracking = factoryAnimatedTracking({
           color: '#ff7e00',
-          velocityTimeout: 60000,
+          velocityTimeout: 30000,
+          velocityLongTimeout: 120000,
           minDistanceChangeRate: 1.5,
           partOfLine: 5
      });
